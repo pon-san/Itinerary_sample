@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #151515 url('../images/bg.png') no-repeat fixed left bottom;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.link::after {
+  content: '';
+  style: ;
+}
+.center {
+  text-align: center;
+}
+.heading {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  margin: 30px 0 15px;
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+}
+.heading::before,
+.heading::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+.heading::before {
+  bottom: 5px;
+}
+.container {
+  padding: 0 30px 0 60px;
+}
+
+.fa, .fas {
+  font-size: 1.6rem;
+  margin: 0 0.8rem;
+}
+
+/* タイトル部分　*/
+.header {
+  padding: 170px 30px 80px;
+}
+
+.site-title-sub {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  margin: 0 0 30px;
+}
+
+.site-title-sub::before,
+.site-title-sub::after {
+  content: '';
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  margin: 0 30px;
+  background: #fff;
+  vertical-align: middle;
+}
+.site-title {
+  font-size: 7.6rem;
+  margin: 50px 0 40px;
+}
+.site-description {
+  font-size: 1.6rem;
+  color: #888;
+  margin-bottom: 50px;
+}
+
+.top-msg {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+.bring-item {
+  font-size: 1.3rem;
+  padding-bottom: 5px;
+}
+
+/* 合宿所概要　*/
+.about {
+  background: #fff;
+  color: #333;
+  padding: 40px 30px 80px;
+}
+
+.address {
+  width: 100%;
+}
+
+.about-text {
+  display: block;
+  font-size: 1.4rem;
+  line-height: 2.5;
+  margin: 8px 0;
+}
+
+/* 1日目　*/
+.first {
+  background: #383634;
+  padding: 40px 0 80px;
+}
+.day {
+  display: table;
+  width: 100%;
+  margin-top: 40px;
+  border-bottom: 1px solid #fff;
+}
+.day-left, .day-middle, .day-right {
+  display: table-cell;
+  font-size: 1.5rem;
+  padding-bottom: 12px;
+  text-align: left;
+}
+.day-left {
+  width:18%;
+}
+.day-middle {
+  width: 25%;
+}
+.day-right {
+  width: 57%;
+}
+.day-left .icon {
+  display: inline-block;
+  width: 10%;
+  float: left;
+}
+.day-left .time {
+  display: inline-block;
+}
+
+/* 2日目　*/
+.second {
+  background: #aaa;
+  padding: 40px 0 80px;
+}
+
+/* 周辺施設　*/
+.facilities {
+  background: #fff;
+  color: #333;
+}
+.facility-wrapper {
+  display: table;
+  width: 90%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+  font-size: 1.4rem;
+  padding-bottom: 80px;
+}
+.facility-box {
+  display: table-cell;
+  padding: 0 5px;
+}
+.facility-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  border: 4px solid;
+  border-radius: 50%;
+  color: #f1b400;
+  font-size: 8rem;
+  line-height: 142px;
+}
+.facility-title {
+  margin: 0 20px 20px;
+  font-size: 1.8rem;
+}
+.facility-text {
+  display: inline-block;
+  color: #333;
+  line-height: 2.5;
+  margin: 8px 0;
+}
+.facility-description {
+  font-size: 1.2rem;
+}
+
+/* 備考　*/
+.remarks .heading {
+  margin: 40px 0;
+}
+.remark {
+  margin: 20px 0 ;
+  padding: 10px 0 ;
+}
+.amenity {
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+}
+.tennis-coat {
+  font-size: 1.6rem;
+}
+.cottage-facility-wrapper {
+  display: table;
+  margin: 0 auto;
+}
+.cottage-facility-text {
+  display: table-cell;
+  font-size: 1.6rem;
+  width: 30%;
+  vertical-align: middle;
+  color: #fff;
+  padding-right: 35px;
+}
+.cottage-facilities {
+  display: table-cell;
+  width: 70%;
+  border-left: 2px dotted #fff;
+  padding-left: 18px;
+}
+.cottage-facility-list {
+  color: #fff;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.footer {
+  padding: 12px 0;
+  font-size: 1.3rem;
+  text-align: center;
+}
