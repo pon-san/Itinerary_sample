@@ -7,7 +7,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  background: #151515 url('../images/bg.png') no-repeat fixed left bottom;
+  background: #151515 url('../images/aurola.jpg') no-repeat fixed left bottom;
   background-size: cover;
   color: #fff;
   font-size: 1.4rem;
@@ -65,7 +65,7 @@ a {
 }
 
 .site-title-sub {
-  font-size: 2.2rem;
+  font-size: 130%;
   letter-spacing: 1px;
   margin: 0 0 30px;
 }
@@ -74,19 +74,26 @@ a {
 .site-title-sub::after {
   content: '';
   display: inline-block;
-  width: 140px;
+  width: 15%;
   height: 2px;
-  margin: 0 30px;
   background: #fff;
   vertical-align: middle;
 }
+.site-title-sub::before {
+  margin-right: 5%;
+} 
+.site-title-sub::after {
+  margin-left: 5%;
+}
+
+
 .site-title {
   font-size: 7.6rem;
   margin: 50px 0 40px;
 }
 .site-description {
   font-size: 1.6rem;
-  color: #888;
+  color: #BDBDBD;
   margin-bottom: 50px;
 }
 
@@ -119,7 +126,7 @@ a {
 
 /* 1日目　*/
 .first {
-  background: #383634;
+  background: #212121;
   padding: 40px 0 80px;
 }
 .day {
@@ -133,6 +140,7 @@ a {
   font-size: 1.5rem;
   padding-bottom: 12px;
   text-align: left;
+  vertical-align: middle;
 }
 .day-left {
   width:18%;
@@ -142,6 +150,8 @@ a {
 }
 .day-right {
   width: 57%;
+  vertical-align: baseline;
+  padding-left: 2%;
 }
 .day-left .icon {
   display: inline-block;
@@ -154,7 +164,7 @@ a {
 
 /* 2日目　*/
 .second {
-  background: #aaa;
+  background: none;
   padding: 40px 0 80px;
 }
 
@@ -162,6 +172,7 @@ a {
 .facilities {
   background: #fff;
   color: #333;
+  padding-bottom: 80px;
 }
 .facility-wrapper {
   display: table;
@@ -169,7 +180,6 @@ a {
   margin: 50px auto 0;
   table-layout: fixed;
   font-size: 1.4rem;
-  padding-bottom: 80px;
 }
 .facility-box {
   display: table-cell;
@@ -200,10 +210,13 @@ a {
 }
 
 /* 備考　*/
+.remarks {
+  background: #212121;
+}
 .remarks .heading {
   margin: 40px 0;
 }
-.remark {
+.remark-main {
   margin: 20px 0 ;
   padding: 10px 0 ;
 }
@@ -243,7 +256,92 @@ a {
 }
 
 .footer {
-  padding: 12px 0;
+  background: #212121;
+  padding: 40px 0 20px;
   font-size: 1.3rem;
   text-align: center;
 }
+
+/* スマートフォン　*/
+
+@media (max-width: 1024px) {
+  body {
+    background-image: none;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 1.3rem;
+  }
+  .heading {
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
+  .container {
+    padding: 0 10px 0 15px;
+  }
+
+  /* --- header --- */
+  .header {
+    padding-top: 60px;
+  }
+  .site-title-sub {
+    font-size: 1.7rem;
+  }
+  .site-title-sub::before,
+  .site-title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .site-title {
+    margin-top: 35px;
+    font-size: 5rem;
+  }
+
+  /* --- about --- */
+  .about-text {
+    line-height: 1.8;
+  }
+
+  /* --- works --- */
+  .first-wrapper,
+  .work-box {
+    display: block;
+  }
+  .work-image {
+    display: none;
+  }
+  .work-description {
+    position: relative;
+  }
+  .work-box::after {
+    top: 0;
+    height: 100%;
+    background-size: cover;
+    transform: none;
+  }
+  .day-left, .day-middle, .day-right {
+    vertical-align: middle;
+    font-size: 1.4rem;
+  }
+  .day-right {
+    font-size: 1.5rem;
+    vertical-align: normal;
+  }
+
+  /* --- skills --- */
+  .facility-wrapper,
+  .facility-box {
+    display: block;
+    margin: 40px auto;
+  }
+  .facility-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    line-height: 92px;
+  }
+  .facility-text {
+    margin: 0;
+  }
